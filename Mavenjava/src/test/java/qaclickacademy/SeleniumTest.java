@@ -2,6 +2,7 @@ package qaclickacademy;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class SeleniumTest {
@@ -12,8 +13,8 @@ public class SeleniumTest {
 	public void BrowserAUtomation()
 	{
 		System.out.println("BrowserAUtomation");	
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.firefox.marionette", "/home/ubuntu/Documents/geckodriver");
+		WebDriver driver = new FirefoxDriver();
 		driver.get("https://facebook.com");
         System.out.println(driver.getTitle());  
         String s =driver.getCurrentUrl();
