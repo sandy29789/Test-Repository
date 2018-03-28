@@ -13,7 +13,7 @@ public class SeleniumTest {
 	public void BrowserAUtomation()
 	{
 		System.out.println("BrowserAUtomation");	
-		System.setProperty("webdriver.firefox.marionette", "/home/ubuntu/Documents/geckodriver");
+		System.setProperty("webdriver.firefox.marionette", "\\home\\ubuntu\\Documents\\geckodriver");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://facebook.com");
         System.out.println(driver.getTitle());  
