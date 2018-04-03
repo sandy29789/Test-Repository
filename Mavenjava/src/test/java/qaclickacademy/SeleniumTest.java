@@ -2,7 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class test {
+public class SeleniumTest {
 
 	/**
 	 * @param args
