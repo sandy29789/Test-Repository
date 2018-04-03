@@ -1,24 +1,24 @@
-package qaclickacademy;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class SeleniumTest {
 
-	//testng xml file from Maven
-	// how to execute all test cases from Test folder  - mvn test
-	@Test
-	public void BrowserAUtomation()
-	{
-		System.out.println("BrowserAUtomations");	
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.gecko.driver","/home/ubuntu/Documents/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("www.google.com");
+		System.out.println(driver.getCurrentUrl());
+		driver.close();
+		
+		
+		
 		
 	}
-	@Test
-	public void elementsUi()
-	{
-		System.out.println("elementsUi");	
-	}
-	
-	
+
 }
