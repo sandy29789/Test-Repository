@@ -1,5 +1,4 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class SeleniumTest {
@@ -7,13 +6,12 @@ public class SeleniumTest {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.gecko.driver","/home/ubuntu/Documents/geckodriver");
 		WebDriver driver = new FirefoxDriver();
-		driver.get("www.google.com");
-		System.out.println(driver.getCurrentUrl());
+        Thread.sleep(3000);
 		driver.close();
 		
 		
