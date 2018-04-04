@@ -18,7 +18,8 @@ public class SeleniumTest {
         System.out.println(driver.getTitle());  
         String s =driver.getCurrentUrl();
         System.out.println(s);
-driver.close();
+        driver.close();
+        system.out.println(s)
 	}
 	@Test
 	public void elementsUi()
